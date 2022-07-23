@@ -333,13 +333,9 @@ div.info {
 
 /* My Work */
 
-section#myWork {
-   
-}
-
 .myWorkHeader {
     text-align: center;
-    padding: 48px;
+    padding: 0px 0px 48px 0px;
     font-size: 24px;
 }
 
@@ -364,14 +360,17 @@ section#myWork {
 }
 
 .carousel-item {
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 .carousel-control-prev {
     background-color: #576F72;
+    width: 8%;
 }
+
 .carousel-control-next {
     background-color: #576F72;
+    width: 8%;
 }
 
 em {
