@@ -9,12 +9,9 @@ font-family: 'Raleway', sans-serif; */
     background: #fff;
 }
 
-/* navigation bar */
 
-.navbar-brand {
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-}
+
+/* Navigation Bar */
 
 .nav-item {
     padding: 0 24px;
@@ -23,7 +20,7 @@ font-family: 'Raleway', sans-serif; */
 li, a, button {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     list-style-type: none;
     text-decoration: none;
     color: #7D9D9C;
@@ -37,6 +34,8 @@ header {
     padding: 10px 2%;
     height: 100px;
     width: 100%;
+    position: fixed;
+    box-shadow: 0 0 4px 0;
 }
 
 a {
@@ -53,4 +52,238 @@ a:hover {
 .logo {
     max-width: 80px;
     vertical-align: middle;
+}
+
+
+
+/* About Me */
+
+.aboutMe {
+    padding: 128px 88px;
+}
+
+.heroImg {
+    max-height: 766px;
+    float: left;
+    margin-right: 70px;
+}
+
+.aboutMeContainer {
+    height: 766px;
+    background-color: #576F72;
+    padding: 100px;
+
+}
+
+.aboutMeText {
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #576F72;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.aboutMeIntro {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    background-color: #576F72;
+    color: #fff;
+}
+
+
+
+
+/* Skills */
+
+.skillsBar {
+    width: 300px;
+    background: #fff;
+    box-shadow: 5px 5px 10px rgba (0,0,0,0.2);
+}
+
+.skillsBar .bar {
+    margin: 16px 0;
+}
+
+.skillsBar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skillsBar .bar .info {
+    margin-bottom: 5px;
+}
+
+.skillsBar .bar .info span {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+.skillsBar .bar .progressLine {
+    position: relative;
+    height: 16px;
+    width: 100%;
+    background: #F0EBE3;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progressLine span {
+    height: 100%;
+    width: 80%;
+    background-color: #576F72;
+    position: absolute;
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.progressLine.userResearch span {
+    width: 90%;
+}
+
+.progressLine.figma span {
+    width: 95%;
+}
+
+.progressLine.adobe span {
+    width: 45%;
+}
+
+.progressLine.HTML span {
+    width: 75%;
+}
+
+.progressLine.CSS span {
+    width: 75%;
+}
+
+.progressLine.javaScript span {
+    width: 50%;
+}
+
+
+.progressLine.teamPlayer span {
+    width: 80%;
+}
+
+.progressLine.communication span {
+    width: 75%;
+}
+
+.progressLine.problemSolving span {
+    width: 91%;
+}
+
+.progressLine.creativity span {
+    width: 93%;
+}
+
+.progressLine.presentation span {
+    width: 70%;
+}
+
+.progressLine.dogOwner span {
+    width: 100%;
+}
+
+.bar .progressLine span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #576F72;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.bar .progressLine span::after {
+    position: absolute;
+    right: 0;
+    top: -24px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    background: #576F72;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+
+.progressLine.userResearch span::after {
+    content: "90%";
+}
+
+.progressLine.figma span::after {
+    content: "95%";
+}
+
+.progressLine.adobe span::after {
+    content: "45%";
+}
+
+.progressLine.HTML span::after {
+    content: "75%";
+}
+
+.progressLine.CSS span::after {
+    content: "75%";
+}
+
+.progressLine.javaScript span::after {
+    content: "50%";
+}
+
+.progressLine.teamPlayer span::after {
+    content: "80%";
+}
+
+.progressLine.communication span::after {
+    content: "75%";
+}
+
+.progressLine.problemSolving span::after {
+    content: "91%";
+}
+
+.progressLine.creativity span::after {
+    content: "93%";
+}
+
+.progressLine.presentation span::after {
+    content: "70%";
+}
+
+.progressLine.dogOwner span::after {
+    content: "100%";
 }
