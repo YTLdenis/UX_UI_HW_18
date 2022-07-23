@@ -15,6 +15,10 @@ h1 {
     color: #576F72;
 }
 
+section {
+    padding: 0px 88px 64px;
+}
+
 
 /* Navigation Bar */
 
@@ -328,6 +332,31 @@ div.info {
 
 /* My Work */
 
-section {
-    padding: 0px 88px 64px;
+section#myWork {
+    padding: 0px 128px;
+}
+
+.myWorkHeader {
+    text-align: center;
+    padding: 48px;
+}
+
+.myWorkWeb-image {
+    height: 450px;
+    padding: 48px 0px 48px 0px;
+}
+
+.myWorkMobile-image {
+    height: 600px;
+    padding: 48px 0px 48px 0px;
+}
+
+.webImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileImages {
+    display: flex;
+    justify-content: space-between;
 }
