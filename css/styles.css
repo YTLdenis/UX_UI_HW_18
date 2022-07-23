@@ -11,7 +11,7 @@ font-family: 'Raleway', sans-serif; */
 
 h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #576F72;
 }
 
@@ -109,18 +109,19 @@ a:hover {
 /* Skills */
 
 .hardSkillsHeader {
-    padding: 0px 0px 48px 0px;
+    padding: 48px 0px 48px 0px;
 }
 
 .softSkillsHeader {
-    padding: 0px 0px 48px 0px;
+    padding: 48px 0px 48px 0px;
 }
 
 .mySkillsContainer {
-    height: 406px;
+    height: 550px;
     padding: 0px 164px 180px 164px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 0px 4px;
 }
 
 .hardSkillsContainer {
@@ -263,7 +264,7 @@ div.info {
 .bar .progressLine span::after {
     position: absolute;
     right: 0;
-    top: -24px;
+    top: -28px;
     color: #fff;
     font-size: 12px;
     font-weight: 400;
@@ -333,21 +334,22 @@ div.info {
 /* My Work */
 
 section#myWork {
-    padding: 0px 128px;
+   
 }
 
 .myWorkHeader {
     text-align: center;
     padding: 48px;
+    font-size: 24px;
 }
 
 .myWorkWeb-image {
-    height: 450px;
+    height: 400px;
     padding: 48px 0px 48px 0px;
 }
 
 .myWorkMobile-image {
-    height: 600px;
+    height: 500px;
     padding: 48px 0px 48px 0px;
 }
 
@@ -359,4 +361,20 @@ section#myWork {
 .mobileImages {
     display: flex;
     justify-content: space-between;
+}
+
+.carousel-item {
+    padding: 0 15%;
+}
+
+.carousel-control-prev {
+    background-color: #576F72;
+}
+.carousel-control-next {
+    background-color: #576F72;
+}
+
+em {
+    display: flex;
+    justify-content: space-around;
 }
