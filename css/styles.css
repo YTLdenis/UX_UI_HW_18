@@ -9,6 +9,11 @@ font-family: 'Raleway', sans-serif; */
     background: #fff;
 }
 
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #576F72;
+}
 
 
 /* Navigation Bar */
@@ -20,7 +25,7 @@ font-family: 'Raleway', sans-serif; */
 li, a, button {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     list-style-type: none;
     text-decoration: none;
     color: #7D9D9C;
@@ -31,11 +36,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 2%;
+    padding: 10px 88px;
     height: 100px;
     width: 100%;
     position: fixed;
     box-shadow: 0 0 4px 0;
+    z-index: 3;
 }
 
 a {
@@ -59,7 +65,7 @@ a:hover {
 /* About Me */
 
 .aboutMe {
-    padding: 128px 88px;
+    padding: 178px 0px 0px 0px;
 }
 
 .heroImg {
@@ -71,7 +77,7 @@ a:hover {
 .aboutMeContainer {
     height: 766px;
     background-color: #576F72;
-    padding: 100px;
+    padding: 100px 80px;
 
 }
 
@@ -82,6 +88,7 @@ a:hover {
     background-color: #576F72;
     font-family: 'Raleway', sans-serif;
     color: #fff;
+    padding: 24px;
 }
 
 .aboutMeIntro {
@@ -96,6 +103,35 @@ a:hover {
 
 
 /* Skills */
+
+.hardSkillsHeader {
+    padding: 0px 0px 48px 0px;
+}
+
+.softSkillsHeader {
+    padding: 0px 0px 48px 0px;
+}
+
+.mySkillsContainer {
+    height: 406px;
+    padding: 0px 164px 180px 164px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hardSkillsContainer {
+    float: left;
+}
+
+.softSkillsContainer {
+    float: right;
+}
+
+div.info {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
 
 .skillsBar {
     width: 300px;
@@ -286,4 +322,12 @@ a:hover {
 
 .progressLine.dogOwner span::after {
     content: "100%";
+}
+
+
+
+/* My Work */
+
+section {
+    padding: 0px 88px 64px;
 }
